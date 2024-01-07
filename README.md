@@ -7,7 +7,7 @@ React.createElement is used to createElement in frontend while at backend it cre
 So, there are 2 DOMs, one which the browser creates and second which React creates which is 
 known as Virtual DOM.
 
-Now, when an update in state comes thorough SetState and the whole app is re-rendered, the whole
+Now, when an update in state comes through SetState and the whole app is re-rendered, the whole
 DOM is repainted (that is why loading comes on screen). Now this process can become very bulky
 and can slow the application. To optimize this process, React uses Fibre, which is an algorithm
 which optimizes this process by smartly updating only selective parts of the application.
@@ -25,5 +25,5 @@ We've established that a primary goal of Fiber is to enable React to take advant
 Now the algo Fibre works on reconciliation. 
 The algorithm React uses to diff one tree with another to determine which parts need to be changed.
 Like it allows React to differentiate between the trees of both DOMs and update only the 
-selected parts evaluated by the algorithm.
+selected delta parts evaluated by the algorithm.
 
