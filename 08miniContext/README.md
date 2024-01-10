@@ -1,0 +1,1 @@
+Read UserContext.js and UserContextProvider.jsx file for state management.
